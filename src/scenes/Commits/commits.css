@@ -1,0 +1,23 @@
+.commit-header {
+  font-size: 12px;
+}
+
+.commit-hash {
+  font-size: 15px;
+  color: #777777;
+}
+
+.commit-message {
+  font-size: 15px;
+}
+
+.commit-footer {
+  font-size: 12px;
+  color: #777777;
+}
+
+.commit-header-container {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
