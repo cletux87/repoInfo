@@ -5,6 +5,7 @@ import Commits from './scenes/Commits';
 import Home from './scenes/Home';
 import Project from './scenes/Project';
 import NotFound from './scenes/NotFound';
+import UnderConstruction from './scenes/UnderConstruction';
 import './App.css';
 
 function App() {
@@ -19,9 +20,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/info'>
-            <div>Route 1</div>
-          </Route>
+          <Route exact path='/info' component={UnderConstruction} />
           <Route exact path='/commit' component={Commits} />
           <Route exact path='/project' component={Project} />
           <Route path='' component={NotFound} />
