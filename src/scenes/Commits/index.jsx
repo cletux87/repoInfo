@@ -45,7 +45,7 @@ const Commits = (props) => {
 
     function filterByMessage(message, theArray){
         if( !isNil(message) && message !== '' ){
-            return theArray.filter(value=> value.commit.message.includes(message));
+            return theArray.filter(value=> value.commit.message.toLowerCase().includes(message.toLowerCase()));
         }
         return theArray;
 
