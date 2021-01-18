@@ -10,11 +10,8 @@ const Project = () => {
   const [data, setData] = useState();
 
   useEffect(()=>{
-    console.log('In function');
     getRepo()
       .then(value =>{
-        console.log('------------REPO-----------');
-        console.log(value);
         setData(value);
         setSceneState('RESPONSE');
       })
@@ -47,7 +44,7 @@ function renderContent(){
               contain information regardig the project. This project uses the GitHub API to gather all 
               the information regarding this project
             </p>
-            <span class="text-warning d-flex justify-content-end">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            <span className="text-warning d-flex justify-content-end">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
           </div>
         </div>
       </div>
@@ -57,7 +54,7 @@ function renderContent(){
             Download information
           </div>
           <div className="card-body">
-            <p>You can clone the project using <h5>{data.data.clone_url}</h5></p>
+            <p>You can clone the project using </p><h5>{data.data.clone_url}</h5>
             <small className="text-muted d-flex justify-content-end">Created by {data.data.owner.login}</small>
           </div>
         </div>
