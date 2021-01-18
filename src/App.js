@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Commits from './scenes/Commits';
 import Home from './scenes/Home';
 import Project from './scenes/Project';
+import NotFound from './scenes/NotFound';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           </Route>
           <Route exact path='/commit' component={Commits} />
           <Route exact path='/project' component={Project} />
+          <Route path='' component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>
