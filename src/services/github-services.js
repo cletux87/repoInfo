@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const projectName = 'testLogin';
+const projectName = 'repoInfo';
 
 const petition = axios.create({
     baseURL: 'https://api.github.com'
